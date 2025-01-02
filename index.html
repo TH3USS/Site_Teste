@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Linhas Separadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 20px; /* Define o espaçamento entre as linhas */
+            background-color: transparent;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            height: 40px;
+          padding: 15px 40px 15px 40px;
+          position: relative;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr {
+            background-color: #fff;
+            transition: background-color 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+          border-radius: 20px
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+.radius-rigth{
+  border-radius: 20px 0 0 20px;
+}
+
+.radius-left{
+  border-radius: 0 20px 20px 0;
+}
+
+.degrade{
+  
+            background: linear-gradient(90deg, #ff743393, #ff413393);
+  color:transparent;
+    position: absolute;
+  height: 100px;
+  
+            transform: translateX(200px) translateY(-80px);
+  width: 60%;
+  border-radius: 50px;
+  
+            filter: blur(20px);
+  z-index:2;
+}
+
+.degrade2{
+  
+            background: linear-gradient(90deg, #ffa73373, #ff853373);
+  color:transparent;
+    position: absolute;
+  height: 100px;
+  
+            transform: translateX(150px) translateY(-5px);
+  width: 80%;
+  border-radius: 50px;
+  
+            filter: blur(30px);
+  z-index:-1;
+}
+
+.radius-rigth-up{
+  border-radius: 40px 0 0 5px;
+}
+
+.radius-left-up{
+  border-radius: 0 40px 5px 0;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn">Clique Aqui</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>João</td>
+                    <td>joao@email.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria</td>
+                    <td>maria@email.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pedro</td>
+                    <td>pedro@email.com<
