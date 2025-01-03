@@ -12,28 +12,34 @@ namespace ProgramaTeste.Controllers
         {
             _enderecoRepository = enderecoRepository;
         }
-
-        // Lista de endereços de uma pessoa
         public async Task<IActionResult> Index(int pessoaId)
         {
             var enderecos = await _enderecoRepository.GetByPessoaIdAsync(pessoaId);
-            ViewBag.PessoaId = pessoaId; // Passa o ID da pessoa para a view
+            ViewBag.PessoaId = pessoaId;
             return View(enderecos);
         }
 
 
-        // POST: Cadastro de um novo endereço
         [HttpPost]
         public async Task<IActionResult> Create(Endereco endereco)
         {
             if (!ModelState.IsValid)
-            { // Certifique-se de que o valor seja mantido
+            { 
                 return View(endereco);
             }
 
-            await _enderecoRepository.AddAsync(endereco);
-            // Após cadastrar o endereço, retorna à lista de endereços da pessoa
-            return RedirectToAction(nameof(Index), new { pessoaId = endereco.PessoaId });
+			try
+			{
+				await _enderecoRepository.AddAsync(endereco);
+				return RedirectToAction(nameof(Index), new { pessoaId = endereco.PessoaId });
+			}
+			catch (Exception ex)
+			{
+                TempData["Message"] = "Erro ao cadastrar. Tenha certeza de usar somente numeros no CEP.";
+				return RedirectToAction(nameof(Index), new { pessoaId = endereco.PessoaId });
+			}
+
+			
             
         }
 
@@ -46,25 +52,35 @@ namespace ProgramaTeste.Controllers
                 return View(endereco);
             }
 
-            await _enderecoRepository.UpdateAsync(endereco);
-            endereco = await _enderecoRepository.GetByIdAsync(id);
-            return RedirectToAction(nameof(Index), new { pessoaId = endereco.PessoaId });
+			try
+			{
+				await _enderecoRepository.UpdateAsync(endereco);
+				endereco = await _enderecoRepository.GetByIdAsync(id);
+				return RedirectToAction(nameof(Index), new { pessoaId = endereco.PessoaId });
+			}
+			catch (Exception ex)
+			{
+                TempData["Message"] = "Erro ao editar. Tenha certeza de usar somente numeros no CEP.";
+                endereco = await _enderecoRepository.GetByIdAsync(id);
+                return RedirectToAction(nameof(Index), new { pessoaId = endereco.PessoaId });
+            }
+
+			
         }
 
-        // Ação para excluir endereço
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteEndereco(int id, int pessoaId)
         {
             try
             {
-                await _enderecoRepository.DeleteAsync(id);  // Chama o método de exclusão do repositório
-                return RedirectToAction(nameof(Index), new { pessoaId = pessoaId });  // Redireciona para a lista de endereços
+                await _enderecoRepository.DeleteAsync(id);
+                return RedirectToAction(nameof(Index), new { pessoaId = pessoaId });
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError("CustomError", "Erro ao excluir o endereço. Tente novamente.");
-                return RedirectToAction(nameof(Index), new { pessoaId = pessoaId });  // Volta para a página de lista
+                return RedirectToAction(nameof(Index), new { pessoaId = pessoaId });
             }
         }
 

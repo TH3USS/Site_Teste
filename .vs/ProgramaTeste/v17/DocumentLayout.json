@@ -1,34 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\",
+  "WorkspaceRootPath": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\views\\endereco\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\views\\endereco\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\views\\pessoa\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\views\\pessoa\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\views\\pessoa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\programateste\\programateste\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|c:\\users\\matheus\\documents\\projetos\\siteteste\\programateste\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D72AD859-FC43-4CEB-8853-9887B243293B}|ProgramaTeste\\ProgramaTeste.csproj|solutionrelative:programateste\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,101 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Views\\Pessoa\\Index.cshtml",
-              "RelativeDocumentMoniker": "ProgramaTeste\\Views\\Pessoa\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Views\\Pessoa\\Index.cshtml",
-              "RelativeToolTip": "ProgramaTeste\\Views\\Pessoa\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-03T03:02:50.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Views\\Pessoa\\Create.cshtml",
-              "RelativeDocumentMoniker": "ProgramaTeste\\Views\\Pessoa\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Views\\Pessoa\\Create.cshtml",
-              "RelativeToolTip": "ProgramaTeste\\Views\\Pessoa\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-03T02:19:29.432Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "ProgramaTeste\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "ProgramaTeste\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-31T19:54:41.575Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Views\\Endereco\\Index.cshtml",
-              "RelativeDocumentMoniker": "ProgramaTeste\\Views\\Endereco\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Views\\Endereco\\Index.cshtml",
-              "RelativeToolTip": "ProgramaTeste\\Views\\Endereco\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwDMAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-28T03:15:36.626Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\appsettings.json",
+              "RelativeDocumentMoniker": "ProgramaTeste\\appsettings.json",
+              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\appsettings.json",
+              "RelativeToolTip": "ProgramaTeste\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T05:04:50.585Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnderecoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Repositories\\EnderecoRepository.cs",
-              "RelativeDocumentMoniker": "ProgramaTeste\\Repositories\\EnderecoRepository.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Repositories\\EnderecoRepository.cs",
-              "RelativeToolTip": "ProgramaTeste\\Repositories\\EnderecoRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T03:14:09.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnderecoController.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Controllers\\EnderecoController.cs",
-              "RelativeDocumentMoniker": "ProgramaTeste\\Controllers\\EnderecoController.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Controllers\\EnderecoController.cs",
-              "RelativeToolTip": "ProgramaTeste\\Controllers\\EnderecoController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T03:13:47.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PessoaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Repositories\\PessoaRepository.cs",
-              "RelativeDocumentMoniker": "ProgramaTeste\\Repositories\\PessoaRepository.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\Repositories\\PessoaRepository.cs",
-              "RelativeToolTip": "ProgramaTeste\\Repositories\\PessoaRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T02:54:53.817Z"
             }
           ]
         },

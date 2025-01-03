@@ -9,63 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProgramaTeste
 build_property.RootNamespace = ProgramaTeste
-build_property.ProjectDir = C:\Users\Matheus\Documents\Projetos\ProgramaTeste\ProgramaTeste\
+build_property.ProjectDir = C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Matheus\Documents\Projetos\ProgramaTeste\ProgramaTeste
+build_property.MSBuildProjectDirectory = C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Endereco/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29cQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Endereco/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29cRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Endereco/Index.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Endereco/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Pessoa/Create.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Pessoa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Pessoa/Edit.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Pessoa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Pessoa/Index.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Pessoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Shared/Error.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/_ViewImports.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/_ViewStart.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matheus/Documents/Projetos/ProgramaTeste/ProgramaTeste/Views/Shared/_Layout.cshtml]
+[C:/Users/Matheus/Documents/Projetos/SiteTeste/ProgramaTeste/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k4p9hzvw29

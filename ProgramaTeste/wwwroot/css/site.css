@@ -51,7 +51,7 @@ body {
 table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 20px; /* Define o espaçamento entre as linhas */
+    border-spacing: 0 20px; 
     background-color: transparent;
 }
 
@@ -233,7 +233,7 @@ tr:is(.list):hover {
 
 .form-group:has(.input:focus) .label,
 .form-group:has(.input:valid) .label {
-    transform: translateY(-100%) scale(0.8); /* Corrigido */
+    transform: translateY(-100%) scale(0.8);
     background-color: #f4f4f4;
     padding-inline: 0.3rem;
     color: var(--primary);

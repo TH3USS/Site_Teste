@@ -13,33 +13,30 @@ namespace ProgramaTeste.Controllers
             _pessoaRepository = pessoaRepository;
         }
 
-        // Página inicial: Lista de pessoas cadastradas
         public async Task<IActionResult> Index()
         {
             var pessoas = await _pessoaRepository.GetAllAsync();
             return View(pessoas);
         }
 
-        // Formulário para cadastrar uma nova pessoa
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken] // Proteção contra CSRF
+        [ValidateAntiForgeryToken] 
         public async Task<IActionResult> Create(Pessoa pessoa)
         {
             if (!ModelState.IsValid)
             {
-                // Log para depuração
                 Console.WriteLine("ModelState inválido.");
                 return View(pessoa);
             }
             try
             {
-                await _pessoaRepository.AddAsync(pessoa); // Insere a pessoa no banco
-                return RedirectToAction(nameof(Index)); // Redireciona para a lista de pessoas
+                await _pessoaRepository.AddAsync(pessoa);
+                return RedirectToAction(nameof(Index)); 
             }
             catch (Exception ex)
             {
@@ -50,7 +47,6 @@ namespace ProgramaTeste.Controllers
         }
 
 
-        // Exibe o formulário para editar uma pessoa
         public async Task<IActionResult> Edit(int id)
         {
             var pessoa = await _pessoaRepository.GetByIdAsync(id);
@@ -61,7 +57,6 @@ namespace ProgramaTeste.Controllers
             return View(pessoa);
         }
 
-        // POST: Atualiza a pessoa
         [HttpPost]
         public async Task<IActionResult> Edit(Pessoa pessoa)
         {
@@ -82,20 +77,19 @@ namespace ProgramaTeste.Controllers
             }
         }
 
-        // Ação para excluir pessoa
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeletePessoa(int id)
         {
             try
             {
-                await _pessoaRepository.DeleteAsync(id);  // Chame o método de exclusão do repositório
-                return RedirectToAction(nameof(Index));  // Redireciona para a lista de pessoas
+                await _pessoaRepository.DeleteAsync(id);
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError("CustomError", "Erro ao excluir a pessoa. Tente novamente.");
-                return RedirectToAction(nameof(Index)); // Volta para a página de lista
+                return RedirectToAction(nameof(Index));
             }
         }
 

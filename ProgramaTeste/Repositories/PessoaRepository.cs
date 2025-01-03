@@ -29,7 +29,7 @@ namespace ProgramaTeste.Repositories
             var query = "INSERT INTO Pessoa (Nome, Telefone, CPF) VALUES (@Nome, @Telefone, @CPF)";
             using (var connection = _context.CreateConnection())
             {
-                await connection.ExecuteAsync(query, pessoa); // Insere os dados usando Dapper
+                await connection.ExecuteAsync(query, pessoa);
             }
         }
 

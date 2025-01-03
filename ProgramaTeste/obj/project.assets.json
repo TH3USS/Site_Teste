@@ -1727,11 +1727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\ProgramaTeste.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\ProgramaTeste.csproj",
       "projectName": "ProgramaTeste",
-      "projectPath": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\ProgramaTeste.csproj",
+      "projectPath": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\ProgramaTeste.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\Documents\\Projetos\\ProgramaTeste\\ProgramaTeste\\obj\\",
+      "outputPath": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",

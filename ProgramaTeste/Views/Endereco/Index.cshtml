@@ -30,7 +30,6 @@
                 <td class="list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">@endereco.Cidade</td>
                 <td class="list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">@endereco.Estado</td>
                 <td class="radius-left list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">
-                    <!-- Botão de Excluir -->
                     <div class="degrade">-</div>
                     <div class="degrade2">-</div>
                     <form asp-action="DeleteEndereco" method="post" style="display:inline;">
@@ -119,7 +118,6 @@
 </div>
 
 
-<!-- Script para carregar dados de edição no modal -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
         const createModal = document.getElementById('createModal');
@@ -180,3 +178,11 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.querySelector('#EditEstado').value = estado;
     });
 </script>
+
+
+@if (TempData["Message"] != null)
+{
+    <script>
+        alert('@TempData["Message"]');
+    </script>
+}
