@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Pessoa>
+<div class="d-flex flex justify-content-between">
+    <h2 class="text-uppercase"><strong>Pessoas Cadastradas</strong></h2>
+    <a href="@Url.Action("Create", "Pessoa")" class="btn btn-primary btn-center btn-index">+ Cadastro</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr class="list-titles">
+            <th class="radius-rigth-up">Nome</th>
+            <th>Telefone</th>
+            <th>CPF</th>
+            <th>Ações</th>
+            <th class="radius-left-up"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pessoa in Model)
+        {
+                <tr class="list">
+				<td class="radius-rigth list-item"><a class="custom-cursor" href="@Url.Action("Edit", "Pessoa", new { id = pessoa.Id })"><strong>@pessoa.Nome</strong></a></td>
+                <td class="list-item"><a class="custom-cursor" href="@Url.Action("Edit", "Pessoa", new { id = pessoa.Id })">@pessoa.Telefone</a></td>
+                <td class="list-item"><a class="custom-cursor" href="@Url.Action("Edit", "Pessoa", new { id = pessoa.Id })">@pessoa.CPF</a></td>
+                    <td>
+                    
+                    <a href="@Url.Action("Index", "Endereco", new { pessoaId = pessoa.Id })" class="btn btn-outline-info">Endereços</a>
+                    </td>
+                <td class="radius-left list-item">
+                    <!-- Botão de Excluir -->
+                    <div class="degrade">-</div>
+                    <div class="degrade2">-</div>
+                    <form asp-action="DeletePessoa" method="post">
+                        <input type="hidden" name="Id" value="@pessoa.Id" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir esta pessoa?')"><strong>X</strong></button>
+                    </form>                    
+                </td>                
+                </tr>
+        }
+    </tbody>
+</table>
+

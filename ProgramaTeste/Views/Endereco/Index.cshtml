@@ -1,0 +1,182 @@
+﻿@model IEnumerable<Endereco>
+@{
+    int pessoaId = (int)ViewBag.PessoaId;
+}
+
+<h2 class="text-uppercase"><strong>Endereços Cadastrados</strong></h2>
+<br />
+
+<div class="d-flex flex justify-content-between">
+<a href="@Url.Action("Index", "Pessoa")" class="btn btn-outline-secondary">Voltar</a>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal" data-pessoa-id="@pessoaId">+ Endereço</button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr class="list-titles">
+            <th class="radius-rigth-up">Logradouro</th>
+            <th>CEP</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th class="radius-left-up"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var endereco in Model)
+        {
+            <tr class="list">
+                <td class="radius-rigth list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado"><strong>@endereco.Logradouro</strong></td>
+                <td class="list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">@endereco.CEP</td>
+                <td class="list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">@endereco.Cidade</td>
+                <td class="list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">@endereco.Estado</td>
+                <td class="radius-left list-item custom-cursor" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@endereco.Id" data-logradouro="@endereco.Logradouro" data-cep="@endereco.CEP" data-cidade="@endereco.Cidade" data-estado="@endereco.Estado">
+                    <!-- Botão de Excluir -->
+                    <div class="degrade">-</div>
+                    <div class="degrade2">-</div>
+                    <form asp-action="DeleteEndereco" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@endereco.Id" />
+                        <input type="hidden" name="pessoaId" value="@ViewBag.PessoaId" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este endereço?')"><strong>X</strong></button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal de Criar Endereço -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content form-color">
+            <div class="modal-header">
+				<h5 class="modal-title text-uppercase" id="createModalLabel"><strong>Cadastrar Endereço</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="Create" method="post">
+                    <input type="hidden" id="PessoaId" name="PessoaId" />
+                    <div class="form-group">
+                        <label class="label" for="Logradouro">Logradouro</label>
+                        <input type="text" id="Logradouro" name="Logradouro" class="form-control input" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="CEP">CEP</label>
+                        <input type="text" id="CEP" name="CEP" class="form-control input" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="Cidade">Cidade</label>
+                        <input type="text" id="Cidade" name="Cidade" class="form-control input" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="Estado">Estado</label>
+                        <input type="text" id="Estado" name="Estado" class="form-control input" required />
+                    </div>
+                    <div class="form-button">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Editar Endereço -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content form-color">
+            <div class="modal-header">
+				<h5 class="modal-title text-uppercase" id="editModalLabel"><strong>Editar Endereço</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="Edit" method="post">
+                    <input type="hidden" id="EnderecoId" name="Id" />
+                    <div class="form-group">
+                        <label class="label" for="Logradouro">Logradouro</label>
+                        <input type="text" id="EditLogradouro" name="Logradouro" class="form-control input" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="CEP">CEP</label>
+                        <input type="text" id="EditCEP" name="CEP" class="form-control input" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="Cidade">Cidade</label>
+                        <input type="text" id="EditCidade" name="Cidade" class="form-control input" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="Estado">Estado</label>
+                        <input type="text" id="EditEstado" name="Estado" class="form-control input" required />
+                    </div>
+                    <div class="form-button">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Script para carregar dados de edição no modal -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+        const createModal = document.getElementById('createModal');
+        const pessoaIdInput = document.getElementById('PessoaId');
+
+        createModal.addEventListener('show.bs.modal', (event) => {
+            const button = event.relatedTarget; // Botão que abriu o modal
+            const pessoaId = button.getAttribute('data-pessoa-id'); // Obtém o PessoaId do botão
+            pessoaIdInput.value = pessoaId; // Define o valor no campo oculto
+        });
+    });
+
+
+    document.getElementById("CEP").addEventListener("blur", async function () {
+        const cep = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+        if (cep.length !== 8) {
+            alert("Por favor, insira um CEP válido com 8 dígitos.");
+            return;
+        }
+
+        try {
+            const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+            if (!response.ok) {
+                throw new Error("Não foi possível buscar o CEP.");
+            }
+            const data = await response.json();
+
+            if (data.erro) {
+                alert("CEP não encontrado.");
+                return;
+            }
+
+            // Preenche os campos com os dados retornados
+            document.getElementById("Logradouro").value = data.logradouro || "";
+            document.getElementById("Cidade").value = data.localidade || "";
+            document.getElementById("Estado").value = data.uf || "";
+        } catch (error) {
+            console.error("Erro ao buscar o CEP:", error);
+            alert("Erro ao buscar o CEP. Verifique sua conexão ou tente novamente.");
+        }
+    });
+
+
+    var editModal = document.getElementById('editModal');
+    editModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var enderecoId = button.getAttribute('data-id');
+        var logradouro = button.getAttribute('data-logradouro');
+        var cep = button.getAttribute('data-cep');
+        var cidade = button.getAttribute('data-cidade');
+        var estado = button.getAttribute('data-estado');
+
+        var modal = editModal.querySelector('form');
+        modal.querySelector('#EnderecoId').value = enderecoId;
+        modal.querySelector('#EditLogradouro').value = logradouro;
+        modal.querySelector('#EditCEP').value = cep;
+        modal.querySelector('#EditCidade').value = cidade;
+        modal.querySelector('#EditEstado').value = estado;
+    });
+</script>
