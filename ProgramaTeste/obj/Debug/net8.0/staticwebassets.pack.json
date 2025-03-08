@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProgramaTeste.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ProgramaTeste.bundle.scp.css"
+      "PackagePath": "staticwebassets\\ProgramaTeste.e2t6e1o1uv.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\Matheus\\Documents\\Projetos\\SiteTeste\\ProgramaTeste\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProgramaTeste.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProgramaTeste.Microsoft.AspNetCore.StaticWebAssets.props",

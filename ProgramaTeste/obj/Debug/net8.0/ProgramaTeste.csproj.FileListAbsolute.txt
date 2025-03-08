@@ -137,3 +137,7 @@ C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\ref
 C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\ProgramaTeste.pdb
 C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\ProgramaTeste.genruntimeconfig.cache
 C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\ref\ProgramaTeste.dll
+C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\bin\Debug\net8.0\ProgramaTeste.staticwebassets.endpoints.json
+C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\staticwebassets\msbuild.ProgramaTeste.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Matheus\Documents\Projetos\SiteTeste\ProgramaTeste\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
