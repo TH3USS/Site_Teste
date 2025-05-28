@@ -1,7 +1,7 @@
 # SiteTeste
 
-#### Foi utilizado Dapper, T-SQL e a API para a busca do CEP, utilizei Repositories para as conexões com o banco de dados, deixando os Controllers mais voltados ao controle da interação do usuário.
+#### Dapper, T-SQL, and the API for ZIP code lookup were used. I used Repositories for database connections, keeping the Controllers more focused on managing user interactions.
 
-#### O projeto do banco de dados encontra-se no arquivo word enviado por email.
+#### Note: It is worth mentioning that for the code to work, you need to set the local server name in the appsettings.json file.
 
-#### Obs.: Vale ressaltar que para o funcionamento do código é preciso colocar o nome do servidor local no arquivo appsettings.json.
+---
